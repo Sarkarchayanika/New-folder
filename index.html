@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Registration System</h1>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Register New Student</h2>
+                <form id="registrationForm">
+                    <input type="hidden" id="studentIndex">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class:</label>
+                        <input type="text" id="class" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Roll_No">Roll No:</label>
+                        <input type="text" id="Roll_No" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact Number:</label>
+                        <input type="text" id="contact" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </section>
+            <section class="table-section">
+                <h2>Registered Students</h2>
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Roll_No</th>
+                            <th>Address</th>
+                            <th>Contact Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic rows will be added here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
